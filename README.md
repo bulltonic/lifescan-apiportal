@@ -1,19 +1,22 @@
-# Johnson&Johnson LifeScan API Portal for Apigee Edge using Gulp.js
+# Johnson&Johnson LifeScan API Portal for Apigee Edge
 
-## Project Languages
+## Project Languages, Libraries and Frameworks
 1. HTML5
 2. Sass
 3. jQuery
+4. Bootstrap Framework (v3.7)
+5. Gulp.js
 
-## Project Utilities (Optional)
+## Project Utilities
 1. [Bootstrap Framework (v3.7) - Based on Apigee Current Build](https://getbootstrap.com/docs/3.3/): A free and open-source front-end web framework for building responsive, mobile-first websites and web applications.
-2. [Eric Meyers reset](https://meyerweb.com/eric/tools/css/reset/) and [Normalize.css](https://necolas.github.io/normalize.css/): Makes browsers render all elements more consistently and in line with modern standards.
-3. [Modernizer](https://modernizr.com/): A collection of superfast tests – or “detects” as we like to call them – which run as your web page loads, then you can use the results to tailor the experience to the user.
-4. [TweenMax by Greensock](https://greensock.com/tweenmax): Built for convenience, TweenMax provides a single JavaScript file that contains everything you will commonly need for animating DOM elements.
-5. [SlickSlider by Ken Wheeler](kenwheeler.github.io/slick/): "The last carousel you'll ever need". Not really but its pretty solid and free.
-6. [SVG for Everybody](https://jonathantneal.github.io/svg4everybody/): SVG for Everybody adds external spritemaps support to otherwise SVG-capable browsers.
-7. [Covervid](http://stefanerickson.github.io/covervid/): Make your HTML5 video behave like a background cover image with this lightweight Javascript plugin / jQuery extension 
-8. [Video.js](http://videojs.com/): Video.js is an open source library for working with video on the web, also known as an HTML video player
+2. [Gulp.js](https://gulpjs.com/) -  A toolkit for automating painful or time-consuming tasks in your development workflow, so you can stop messing around and build something.
+3. [Eric Meyers reset](https://meyerweb.com/eric/tools/css/reset/) and [Normalize.css](https://necolas.github.io/normalize.css/): Makes browsers render all elements more consistently and in line with modern standards.
+4. [Modernizer](https://modernizr.com/): A collection of superfast tests – or “detects” as we like to call them – which run as your web page loads, then you can use the results to tailor the experience to the user.
+5. [TweenMax by Greensock](https://greensock.com/tweenmax): Built for convenience, TweenMax provides a single JavaScript file that contains everything you will commonly need for animating DOM elements.
+6. [SlickSlider by Ken Wheeler](kenwheeler.github.io/slick/): "The last carousel you'll ever need". Not really but its pretty solid and free.
+7. [SVG for Everybody](https://jonathantneal.github.io/svg4everybody/): SVG for Everybody adds external spritemaps support to otherwise SVG-capable browsers.
+8. [Covervid](http://stefanerickson.github.io/covervid/): Make your HTML5 video behave like a background cover image with this lightweight Javascript plugin / jQuery extension 
+9. [Video.js](http://videojs.com/): Video.js is an open source library for working with video on the web, also known as an HTML video player
 
 ### Working with [Gulp.js](https://gulpjs.com/)
 1. Dependencies [Node.js](https://nodejs.org/en/) and [npm](https://www.npmjs.com/get-npm)
