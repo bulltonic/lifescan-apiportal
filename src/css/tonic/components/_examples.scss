@@ -1,0 +1,18 @@
+ .component-example {
+ 	padding: 15px 0 30px;
+}
+.panel {
+	position: relative;
+	.icon {
+		font-size: 1.5em;
+		position: absolute;
+		top: 50%;
+		right: 20px;
+		transform: translate(0, -50%) rotate(45deg);
+	}
+	&[aria-expanded="true"] {
+		.icon {
+			transform: translate(0, -50%) rotate(0deg);		
+		}	
+	}
+}
