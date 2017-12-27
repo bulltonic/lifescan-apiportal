@@ -1,0 +1,25 @@
+/*==============================================================
+# Footer
+==============================================================*/
+
+footer {
+    background-color: $grayMed;
+    padding: 15px 10px 15px 10px;
+    margin: 25px 0 0 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    @include breakFirst(medium) {
+    	position: absolute;
+    }
+    .navbar-nav {
+		margin: 10px auto;
+		display: table;
+		table-layout: fixed;
+		float: none;
+    	li a {
+    		color: $white;
+    		text-decoration: none;
+    	}
+    }
+}

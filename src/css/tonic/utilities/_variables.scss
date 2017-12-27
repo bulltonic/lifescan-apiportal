@@ -24,15 +24,15 @@ $textColor:             		$grayDark !default;
 // Links
 // --------------------------------------------------
 
-$linkColor:             		blue !default;
-$linkColorHover:        		darken($linkColor, 15%) !default;
+$linkColor:             		$green !default;
+$linkColorHover:        		darken($linkColor, 10%) !default;
 
 // Buttons
 // --------------------------------------------------
 
-$buttonBackground:				$gray;
+$buttonBackground:				$linkColor;
 $buttonColor:					$white;
-$buttonBackgroundHover:			$grayLight;
+$buttonBackgroundHover:			darken($linkColor, 10%) !default;
 $buttonColorHover:				$gray;
 
 // Transitions
@@ -44,7 +44,7 @@ $pageTrans: 					cubic-bezier(.54,.06,.55,.97);
 // Typography
 // --------------------------------------------------
 
-$sansSerif:						'Montserrat', "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$sansSerif:						"museo-sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $serif:							Times, Georgia, serif;
 		
 $baseFontSize:          		16px !default;

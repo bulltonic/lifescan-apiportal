@@ -1,9 +1,17 @@
 /*==============================================================
-# Header
+# Buttons
 ==============================================================*/
 
-.btn-green {
-	background-color: $green;
-	color: $white;
+.btn {
+	padding: 12px 25px;
+	font-size: 16px;
 	font-weight: bold;
+	text-decoration: none;
+	&.btn-green {
+		background-color: $buttonBackground;
+		color: $white;
+		&:hover, &:focus {
+			background-color: $buttonBackgroundHover;
+		}
+	}
 }

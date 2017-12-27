@@ -1,0 +1,23 @@
+ /*==============================================================
+# Icons
+==============================================================*/
+
+.card-icon {
+	display: inline-block;
+	height: 45px;
+	width: 45px;
+	margin: 0 5px 0 0;
+	svg {
+		width: 100%;
+		height: 100%;
+		display: inline-block;
+	}
+	.circle {
+		fill: $white;
+		stroke: $green;
+	}
+	.symbol {
+		fill: $green;
+		stroke: $green;
+	}
+}

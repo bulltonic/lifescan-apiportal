@@ -7,7 +7,8 @@ html {
 	font: normal 16px / 1.65 $sansSerif;
 }
 body {
-  word-wrap: break-word;
+	font-family: $sansSerif;
+  	word-wrap: break-word;
 }
 body,
 button,
@@ -28,7 +29,6 @@ h6 {
 	text-rendering: optimizeLegibility;
 	line-height: 1;
 	margin-top: 0;
-	font-weight: 700;
 }
 /*h1 {
   font-size: 2.986em;
@@ -59,8 +59,13 @@ p {
     margin: 0 0 1em;
     hyphens: auto; 
 }
-a {
-	text-decoration: none;
+body a {
+	text-decoration: underline;
+	color: $linkColor;
+	transition: .3s ease all;
+	&:hover, &:focus {
+		color: $linkColorHover;
+	}
 }
 dfn,
 cite,

@@ -2,51 +2,79 @@
 # Cards
 ==============================================================*/
 
-.hero-section {
+.card {
+	background: $white;
+	box-shadow: 0 1px 10px 0 rgba($black, 0.1), 0 0 3px 0 rgba($black, 0.15);
+	border-radius: 8px;
+	margin: 20px 0 20px;
+	.card-link-group {
+		display: block;
+		margin: 10px 0;
+		&:last-child {
+			margin: 0;
+		}
+		a {
+			display: block;
+			margin: 10px 0 15px;
+			&.btn {
+				display: inline-block;
+			}
+		}
+	}
+	.card-header {
+		display: block;
+		padding: 25px 25px 0;
+		> * {
+			display: inline-block;
+			vertical-align: middle;
+		}
+		h3 {
+			margin: 0;
+		}
+	}
+	.card-body {
+		flex-grow: 1;
+	}
+	.card-body,
+	.card-footer {
+		padding: 20px 25px;
+		p {
+		 	&:last-child {
+		 		margin: 0;
+		 	}
+		}
+	}
+	.card-footer {
+		border-top: 1px solid $grayLight;
+	}
+}
+.flex-row {
+	margin-bottom: 15px;
+	@include breakFirst(medium) {
+		display: flex;
+	    flex-direction: row;
+    	flex-wrap: wrap;
+    	margin-bottom: 30px;
+		.flex-col {
+			display: flex
+		}
+		.card {
+			display: flex;
+    		width: 100%;
+    		flex-direction: column;
+		}
+	}
+}
+.audience-cards {
 	position: relative;
-	z-index: 1;
-    .hero-content {
-    	position: relative;
-    	z-index: 2;
-    	color: $white;
-    	text-align: center;
-    	padding: 40px 0 60px;
-    	@include breakFirst(medium) {
-    		padding: 100px 0;
-    	}
-    	@include breakFirst(large) {
-    		padding: 180px 0;
-    	}
-    }
-    .hero-background {
-    	background-image: url('../img/fingerprint-texture-green.png');
-		background-size: cover;
-		content: "";
-		width: 100%;
-		height: 100%;
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index: 0;
-    }
- 	.hero-intro {
-    	display: block;
-		font-size: 14px;
-		font-weight: bold;
-		text-transform: uppercase;
-		line-height: 1.43;
-		color: $grayMed;
-		margin: 10px 0 15px;
-    }
-    h1 {
-    	font-weight: normal;
-    	margin: 5px 0 40px;
-    }
-    .hero-description {
-    	max-width: 585px;
-    	margin: 0 auto;
-    	p {
-    		hyphens: none;
-    	}
-    }
+    z-index: 5;
+    @include breakFirst(medium) {
+		margin: -50px 0 0 0;
+	}
+	@include breakFirst(large) {
+		margin: -100px 0 0 0;
+	}
+}
+.overview-card {
+	text-align: center;
 }

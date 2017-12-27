@@ -16,5 +16,12 @@
 // 3. Components
 @import
   	'tonic/components/_header',
+  	'tonic/components/_footer',
   	'tonic/components/_buttons',
+  	'tonic/components/_icons',
+  	'tonic/components/_cards',
     'tonic/components/_hero';
+
+// 4. Layout
+@import
+  	'tonic/layout/_main';

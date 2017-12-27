@@ -7,19 +7,14 @@ $(document).ready(function(){
 	$('body').removeClass('loading');
 
 	// ==============================================================*/
-	// Create node and insert SVG file after the body
+	// Override the login link and refer to a login modal
 	// ==============================================================*/
+	var $loginButton = $('#login-primary');
+	$loginButton.attr("href", "#");
 
-	// Remove local file and uncomment below once on the dev server
-
-	// $.get("./img/spritemap.svg", function(data) {
-	//   var div = document.createElement("div");
-	//   div.innerHTML = new XMLSerializer().serializeToString(data.documentElement);
-	//   document.body.insertBefore(div, document.body.childNodes[0]);
-	// });
-
-	onboarding({});
-
-	// console.log(onboarding.settings);
+	$loginButton.on('click', function(e){
+		e.preventDefault();
+		$('#login-modal').modal()
+	});
 
 })
